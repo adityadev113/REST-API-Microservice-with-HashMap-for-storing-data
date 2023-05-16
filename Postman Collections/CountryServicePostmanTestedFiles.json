@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "e23178a9-cf30-44ba-acd2-4c4e889ae22d",
+		"name": "CountryService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/getcountries",
+			"_postman_id": "63e26801-6bda-4d8b-ae63-6b3b3a777a3a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/getcountries/2"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getcountries/2",
+			"_postman_id": "098c9329-8e30-4c58-8950-411542d551cf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/getcountries/2"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getcountries/countryname?name=India",
+			"_postman_id": "1b2c72dd-e1b6-4d3b-b8fc-2824544de5c2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getcountries/countryname?name=India",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getcountries",
+						"countryname"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "India"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deletecountry/4",
+			"_postman_id": "93486ec8-c793-4abf-922a-07b32b1d5275",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/deletecountry/4"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/addcountry",
+			"_postman_id": "d916e65a-7f8e-45a5-8e44-2a11290489e6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 6,\n    \"countryName\": \"Japan\",\n    \"countryCapital\": \"Tokypo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/addcountry"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/addcountry",
+			"_postman_id": "a8c44edf-1e5c-4c84-a5c6-895d921e8e64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 8,\n    \"countryName\": \"China\",\n    \"countryCapital\": \"Beijing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/updatecountry"
+			},
+			"response": []
+		}
+	]
+}
